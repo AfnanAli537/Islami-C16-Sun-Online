@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_app_online_sun/core/resources/colors_manager.dart';
 
 class ThemeManager{
@@ -15,7 +16,13 @@ class ThemeManager{
       ),
       centerTitle:  true,
     ),
-    scaffoldBackgroundColor: ColorsManager.black
+    scaffoldBackgroundColor: ColorsManager.black,
+    textTheme: TextTheme(
+      titleMedium: GoogleFonts.afacad(
+        fontSize: 20,
+        color: Colors.black
+      )
+    )
   );
   static final ThemeData dark = ThemeData();
 }
