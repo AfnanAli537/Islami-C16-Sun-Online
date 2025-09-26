@@ -22,7 +22,6 @@ class IslamiApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: RoutesManager.routes,
       initialRoute: seenOnboarding ? RoutesManager.mainLayout : RoutesManager.onBoarding,
-      // initialRoute: RoutesManager.splash ,
       theme: ThemeManager.light,
       darkTheme: ThemeManager.dark,
       themeMode: ThemeMode.light,

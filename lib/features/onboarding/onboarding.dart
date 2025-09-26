@@ -95,8 +95,7 @@ class _OnBoardingState extends State<OnBoarding> {
                 width: _currentPage == index ? 20 : 8,
                 height: 8,
                 decoration: BoxDecoration(
-                 borderRadius: BorderRadius.all(Radius.circular(12)),
-                  shape: _currentPage == index ? BoxShape.rectangle : BoxShape.circle,
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
                   color: _currentPage == index ? ColorsManager.gold : Colors.grey,
                 ),
               ),
