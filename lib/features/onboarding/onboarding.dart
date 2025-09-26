@@ -62,7 +62,7 @@ class _OnBoardingState extends State<OnBoarding> {
             child: Text(
               model.description ?? '',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 22, color: ColorsManager.gold,fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, color: ColorsManager.gold,fontWeight: FontWeight.bold),
             ),
           ),
         ],
