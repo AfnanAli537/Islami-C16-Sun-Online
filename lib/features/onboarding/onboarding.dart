@@ -60,9 +60,9 @@ class _OnBoardingState extends State<OnBoarding> {
           Visibility(
             visible: model.description != null,
             child: Text(
-              model.description!,
+              model.description ?? '',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: ColorsManager.gold,fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 22, color: ColorsManager.gold,fontWeight: FontWeight.bold),
             ),
           ),
         ],
@@ -104,9 +104,9 @@ class _OnBoardingState extends State<OnBoarding> {
           (_currentPage == OnboardingModel.onboardingData.length - 1)
               ? TextButton(
                   onPressed: () async {
+                    Navigator.pushReplacementNamed(context, '/mainLayout');
                     final prefs = await SharedPreferences.getInstance();
                     await prefs.setBool('seenOnboarding', true);
-                    Navigator.pushReplacementNamed(context, '/home');
                   },
                   child: Text("Finish",style: TextStyle(color: ColorsManager.gold),),
                 )

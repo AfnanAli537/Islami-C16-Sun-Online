@@ -11,7 +11,7 @@ class OnboardingModel {
   
  static final List<OnboardingModel> onboardingData = [
   OnboardingModel(
-    image: 'assets/images/welcome_arabic.png',
+    image: 'assets/images/welcome.png',
     title: 'Welcome to Islami App',
   ),
   OnboardingModel(
