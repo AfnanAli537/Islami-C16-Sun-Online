@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:islami_app_online_sun/features/main_layout/main_layout.dart';
+import 'package:islami_app_online_sun/features/onboarding/onboarding.dart';
 import 'package:islami_app_online_sun/features/splash/splash.dart';
 import 'package:islami_app_online_sun/features/sura_details/sura_details.dart';
 
@@ -12,6 +13,7 @@ class RoutesManager {
     splash: (context) => Splash(),
     mainLayout : (context)=> MainLayout(),
     suraDetails : (context)=> SuraDetails(),
+    onBoarding : (context)=> OnBoarding(),
   };
 
 }
