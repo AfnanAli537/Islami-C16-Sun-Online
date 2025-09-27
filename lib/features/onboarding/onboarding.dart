@@ -51,18 +51,18 @@ class _OnBoardingState extends State<OnBoarding> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(model.image),
-          SizedBox(height: 35),
+          SizedBox(height: 15),
           Text(
             model.title,
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: ColorsManager.gold),
           ),
-          SizedBox(height: 40),
+          SizedBox(height: 20),
           Visibility(
             visible: model.description != null,
             child: Text(
               model.description ?? '',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, color: ColorsManager.gold,fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 19, color: ColorsManager.gold,fontWeight: FontWeight.bold),
             ),
           ),
         ],
